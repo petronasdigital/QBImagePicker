@@ -649,7 +649,7 @@ static CGSize CGSizeScale(CGSize size, CGFloat scale) {
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSUInteger numberOfColumns self.imagePickerController.numberOfColumnsInPortrait;    
+    NSUInteger numberOfColumns = self.imagePickerController.numberOfColumnsInPortrait;    
     CGFloat width = (CGRectGetWidth(self.view.frame) - 2.0 * (numberOfColumns - 1)) / numberOfColumns;
     
     return CGSizeMake(width, width);
